@@ -1,0 +1,8 @@
+POST http://localhost:5000/marsvin/
+Content-Type: application/json
+
+{
+    "name": "Tristan",
+    "age": 7,
+    "likes": "morötter"
+}
