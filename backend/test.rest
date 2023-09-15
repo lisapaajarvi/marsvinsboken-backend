@@ -1,4 +1,4 @@
-POST http://localhost:5000/marsvin/
+POST http://localhost:3000/marsvin/
 Content-Type: application/json
 
 {
@@ -6,3 +6,7 @@ Content-Type: application/json
     "age": 7,
     "likes": "morötter"
 }
+
+###
+
+GET http://localhost:3000/marsvin/
