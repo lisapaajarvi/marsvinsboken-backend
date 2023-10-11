@@ -20,7 +20,7 @@ function App() {
   const [guineapigs, setGuineapigs] = useState<Guineapig[]>([]);
 
   const getGuineapigs = () => {
-    fetch("http://localhost:3000/marsvin")
+    fetch("http://localhost:3000/guineapigs")
       .then((res) => res.json())
       .then((data: Guineapig[]) => {
         setGuineapigs(data);
@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   const addNewGuineaPig = (newPig: NewGuineapig) => {
-    fetch("http://localhost:3000/marsvin", {
+    fetch("http://localhost:3000/guineapigs", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

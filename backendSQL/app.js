@@ -6,6 +6,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var guineapigRouter = require('./routes/guineapig');
 const mysql = require('mysql2')
+const cors = require("cors")
 
 var app = express();
 
@@ -17,6 +18,7 @@ app.locals.con = mysql.createConnection({
     password: "guineapigs"
 });
 
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
