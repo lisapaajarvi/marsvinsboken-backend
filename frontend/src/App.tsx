@@ -13,7 +13,8 @@ export interface NewGuineapig {
 }
 
 export interface Guineapig extends NewGuineapig {
-  _id: string;
+  id: string;
+  createdAt: Date;
 }
 
 function App() {
